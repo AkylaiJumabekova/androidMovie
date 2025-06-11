@@ -124,7 +124,7 @@
                     android:layout_weight="1"
                     android:fontFamily="@font/inter_bold"
 
-                    android:text="Premyeralar"
+                    android:text="Премьеры"
                     android:textFontWeight="700"
                     android:textSize="18sp" />
 
@@ -134,7 +134,7 @@
                     android:layout_height="40dp"
                     android:layout_marginHorizontal="10dp"
                     android:gravity="center"
-                    android:text="Barcha"
+                    android:text="Все"
                     android:textColor="?attr/colorPrimary"
                     android:textFontWeight="600"
                     android:textSize="16sp" />
@@ -189,7 +189,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Tomosha qilish kerak"
+                    android:text="Обязательно посмотрите"
                     android:textFontWeight="700"
                     android:textSize="20sp" />
 
@@ -199,7 +199,7 @@
                     android:layout_height="40dp"
                     android:layout_marginHorizontal="10dp"
                     android:gravity="center"
-                    android:text="Barcha"
+                    android:text="Все"
                     android:textColor="?attr/colorPrimary"
                     android:textFontWeight="600"
                     android:textSize="16sp"

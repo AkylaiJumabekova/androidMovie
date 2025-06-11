@@ -21,7 +21,7 @@
         android:layout_height="48dp"
         android:fontFamily="@font/poppins"
         android:gravity="bottom|center_horizontal"
-        android:text="Developers"
+        android:text="Разработчики"
         android:textSize="20sp"
         android:textStyle="bold" />
 

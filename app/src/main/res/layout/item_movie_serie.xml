@@ -153,7 +153,7 @@
             android:maxLines="2"
             android:scrollHorizontally="true"
             android:singleLine="true"
-            android:text="Tarjima Kinolar"
+            android:text="Перевод фильмов"
             android:textColor="#9b9dab"
             android:textFontWeight="400"
             android:textSize="14dp"

@@ -335,7 +335,7 @@
                     android:layout_gravity="center"
                     android:layout_marginEnd="16dp"
                     android:alpha="0.7"
-                    android:text="LIVE"
+                    android:text="Прямой эфир"
                     android:fontFamily="@font/poppins"
                     android:includeFontPadding="false"
                     android:textColor="@color/white"

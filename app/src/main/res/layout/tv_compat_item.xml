@@ -31,7 +31,7 @@
             android:layout_marginTop="14dp"
             android:fontFamily="@font/poppins_semi_bold"
             android:includeFontPadding="false"
-            android:text="Yoshlar"
+            android:text="Молодые люди"
             android:textSize="20sp"
             app:layout_constraintStart_toEndOf="@+id/tvLogo"
             app:layout_constraintTop_toTopOf="@+id/tvLogo" />
@@ -40,7 +40,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppins_semi_bold"
-            android:text="Free"
+            android:text="Бесплатно"
             android:textColor="?attr/colorPrimary"
             android:textSize="16sp"
             app:layout_constraintStart_toStartOf="@+id/tvName"

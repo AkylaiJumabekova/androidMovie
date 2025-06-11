@@ -196,7 +196,7 @@
                     android:layout_marginStart="10dp"
                     android:fontFamily="@font/poppins_bold"
                     android:includeFontPadding="false"
-                    android:text="Live"
+                    android:text="Прямой эфир"
                     android:textColor="@color/white"
                     android:textSize="18sp"
                     tools:ignore="TextContrastCheck" />

@@ -256,7 +256,7 @@
                     android:layout_height="64dp"
                     android:fontFamily="@font/poppins_bold"
                     android:gravity="center_vertical"
-                    android:text="Live Tv"
+                    android:text="Прямой тв эфир"
                     android:textColor="?attr/colorSecondary"
                     app:drawableEndCompat="@drawable/ic_round_arrow_drop_down_24"
                     tools:ignore="TextContrastCheck" />
@@ -266,7 +266,7 @@
                     android:layout_height="wrap_content"
                     android:alpha="0.58"
                     android:fontFamily="@font/poppins_bold"
-                    android:text="Default Tv Source" />
+                    android:text="ТВ-источник по умолчанию" />
 
                 <com.google.android.material.textfield.TextInputLayout
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
@@ -389,7 +389,7 @@
                 android:insetBottom="0dp"
                 android:paddingStart="32dp"
                 android:paddingEnd="32dp"
-                android:text="Dasturchilar"
+                android:text="Программисты"
                 android:textAlignment="viewStart"
                 android:textAllCaps="false"
                 app:cornerRadius="0dp"
@@ -404,7 +404,7 @@
                 android:ellipsize="end"
                 android:fontFamily="@font/poppins_bold"
                 android:maxLines="3"
-                android:text="MoviePlayerAkylai ijodkorini qo‘llab-quvvatlamoqchimisiz?\nXayriya qilish haqida o‘ylab ko‘ring"
+                android:text="Хотите поддержать создателя MoviePlayerAkylai?\nРассмотрите возможность пожертвования"
                 android:textAlignment="center"
                 tools:ignore="TextContrastCheck" />
 

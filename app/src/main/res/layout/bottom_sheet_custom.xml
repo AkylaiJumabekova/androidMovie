@@ -17,7 +17,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
             android:fontFamily="@font/poppins_semi_bold"
-            android:text="Render Settings"
+            android:text="Загрузить настройки"
             android:textAlignment="center"
             android:textSize="20sp" />
 

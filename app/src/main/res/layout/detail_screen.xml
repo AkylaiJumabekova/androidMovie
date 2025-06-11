@@ -202,7 +202,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/poppins_semi_bold"
-                        android:text="Vaqti"
+                        android:text="Время"
                         android:textSize="14sp" />
                 </LinearLayout>
 
@@ -220,14 +220,14 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:fontFamily="@font/poppins_bold"
-                        android:text="Brazilian"
+                        android:text="Бразильские"
                         android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/poppins_semi_bold"
-                        android:text="Davlati"
+                        android:text="Состояние"
                         android:textSize="14sp" />
                 </LinearLayout>
 
@@ -283,7 +283,7 @@
                             android:id="@+id/favButtonText"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Sevimli"
+                            android:text="Возлюбленный"
                             android:textAlignment="center" />
 
                     </LinearLayout>
@@ -340,7 +340,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/poppins"
-                            android:text="Qismni Tanlang"
+                            android:text="Выберите часть"
                             android:textAlignment="center"
                             android:textStyle="bold" />
 
@@ -377,7 +377,7 @@
                             android:id="@+id/playButtonText"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Play"
+                            android:text="Запустить"
                             android:textAlignment="center" />
 
                     </LinearLayout>
@@ -400,7 +400,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:fontFamily="@font/poppins"
-                    android:text="Tavsif"
+                    android:text="Описание"
                     android:textSize="18sp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -428,7 +428,7 @@
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="16dp"
                     android:fontFamily="@font/ubuntu_medium"
-                    android:text="Actors"
+                    android:text="Актеры"
                     android:textColor="@color/white"
                     android:textSize="18sp"
                     android:visibility="gone"
