@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_graph"
+    app:startDestination="@id/homeScreen">
+
+
+    <fragment
+        android:id="@+id/navigation_tv"
+        android:name="com.azamovme.MoviePlayerAkylai.ui.screens.tv.randomtv.RandomTvScreen"
+        android:label="Telekanallar"
+        tools:layout="@layout/random_tv_screen">
+
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_favorite"
+        android:name="com.azamovme.MoviePlayerAkylai.ui.screens.favorite.FavoriteScreen"
+        android:label="@string/title_favorite"
+        tools:layout="@layout/favorite_screen">
+        <action
+            android:id="@+id/action_navigation_favorite_to_navigation_anime"
+            app:destination="@id/detailScreen">
+            <argument
+                android:name="animeLink"
+                android:defaultValue="null"
+                app:argType="string" />
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_latest"
+        android:name="com.azamovme.MoviePlayerAkylai.ui.screens.home.HomeScreen"
+        android:label="@string/title_latest"
+        tools:layout="@layout/home_screen">
+        <action
+            android:id="@+id/action_navigation_latest_to_navigation_anime"
+            app:destination="@id/detailScreen">
+            <argument
+                android:name="animeLink"
+                android:defaultValue="null"
+                app:argType="string" />
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_trending"
+        android:name="com.azamovme.MoviePlayerAkylai.ui.screens.trending.TrendingScreen"
+        android:label="@string/title_trending"
+        tools:layout="@layout/trending_screen">
+        <action
+            android:id="@+id/action_navigation_trending_to_navigation_anime"
+            app:destination="@id/detailScreen">
+            <argument
+                android:name="animeLink"
+                android:defaultValue="null"
+                app:argType="string" />
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_search"
+        android:name="com.azamovme.MoviePlayerAkylai.ui.screens.search.SearchScreen"
+        android:label="@string/title_search"
+        tools:layout="@layout/search_screen">
+        <action
+            android:id="@+id/action_navigation_search_to_navigation_anime"
+            app:destination="@id/detailScreen">
+            <argument
+                android:name="animeLink"
+                android:defaultValue="null"
+                app:argType="string" />
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_settings"
+        android:name="com.azamovme.MoviePlayerAkylai.ui.screens.settings.SettingsScreen"
+        android:label="Sozlamalar">
+    </fragment>
+
+    <fragment
+        android:id="@+id/homeScreen"
+        android:name="com.azamovme.MoviePlayerAkylai.ui.screens.home.HomeScreen"
+        android:label="MoviePlayerAkylai"
+        tools:layout="@layout/home_screen">
+        <action
+            android:id="@+id/action_homeScreen_to_detailScreen"
+            app:destination="@id/detailScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailScreen"
+        android:name="com.azamovme.MoviePlayerAkylai.ui.screens.detail.DetailScreen"
+        android:label="DetailScreen" />
+
+    <fragment
+        android:id="@+id/searchScreen"
+        android:name="com.azamovme.MoviePlayerAkylai.ui.screens.search.SearchScreen"
+        android:label="Search"
+        tools:layout="@layout/search_screen" />
+    <fragment
+        android:id="@+id/popularSeeAllScreen"
+        android:name="com.azamovme.MoviePlayerAkylai.ui.screens.home.seeall.PopularSeeAllScreen"
+        android:label="PopularSeeAllScreen" />
+    <fragment
+        android:id="@+id/randomTvScreen"
+        android:name="com.azamovme.MoviePlayerAkylai.ui.screens.tv.randomtv.RandomTvScreen"
+        android:label="random_tv_screen"
+        tools:layout="@layout/random_tv_screen" />
+</navigation>

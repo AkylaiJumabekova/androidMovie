@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="?attr/colorOnBackground"
+    android:layout_height="300dp">
+
+    <ImageView
+        android:id="@+id/backDrop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:foreground="#59181A20"
+        android:scaleType="centerCrop"
+        android:src="@drawable/movie" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:visibility="visible"
+        app:srcCompat="@drawable/linear_gradient_bg"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
+
+    <LinearLayout
+        android:id="@+id/movieActions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/titleTv"
+            android:layout_width="320dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:textFontWeight="600"
+            android:textSize="24sp"
+            tools:text="Название фильма" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/playBtn"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/rounded_btn"
+                android:backgroundTint="?attr/colorPrimary"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingHorizontal="15dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginEnd="8dp"
+                    android:drawableTint="?attr/colorOnSecondary"
+                    android:src="@drawable/play"
+                    app:tint="?attr/colorOnSecondary" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Смотреть"
+                    android:textColor="?attr/colorOnSecondary"
+                    android:textFontWeight="600"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+
+            <ToggleButton
+                android:id="@+id/addListBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:textOn="Сохранено"
+                android:textOff="Сохранить"
+                android:textAllCaps="false"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/rounded_btn_bordered"
+                android:button="@android:color/transparent"
+                style="?android:attr/borderlessButtonStyle"
+                android:checked="false"
+                android:textSize="14sp"
+                android:paddingHorizontal="15dp"
+                android:drawableLeft="@drawable/add_list_icon"
+                android:drawableTint="?attr/colorPrimary"
+                android:gravity="center"
+                android:text="Сохранить"
+                android:textColor="?attr/colorPrimary"
+                android:textFontWeight="600" />
+
+            <LinearLayout
+                android:id="@+id/addListBtn2"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:visibility="gone"
+                android:background="@drawable/rounded_btn_bordered"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingHorizontal="15dp">
+
+                <ImageView
+                    android:id="@+id/addListIcon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginEnd="8dp"
+                    android:drawableTint="@color/white"
+                    android:src="@drawable/ic_baseline_add_24"
+                    app:tint="@color/white" />
+
+                <TextView
+                    android:id="@+id/addListTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Список"
+                    android:textColor="@color/white"
+                    android:textFontWeight="600"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

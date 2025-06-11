@@ -1,0 +1,195 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
+    id 'com.google.dagger.hilt.android'
+    id 'kotlin-parcelize'
+    id 'kotlinx-serialization'
+    id 'com.google.gms.google-services'
+    //
+}
+
+android {
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.azamovme.MoviePlayerAkylai"
+        minSdk 24
+        targetSdk 34
+        versionCode((System.currentTimeMillis() / 60000).toInteger())
+        versionName "2.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        externalNativeBuild {
+            cmake {
+                cppFlags "-std=c++17"
+            }
+        }
+
+        ndk {
+            abiFilters "armeabi-v7a", "arm64-v8a", "x86", "x86_64"
+        }
+        //
+    }
+    externalNativeBuild {
+        cmake {
+            path "CMakeLists.txt"
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    buildFeatures {
+        viewBinding true
+    }
+
+    packagingOptions {
+        exclude 'AndroidManifest.xml'
+        exclude 'lib/arm64-v8a/libcardioDecider.so'
+        exclude 'lib/arm64-v8a/libcardioRecognizer.so'
+        exclude 'lib/arm64-v8a/libcardioRecognizer_tegra2.so'
+        exclude 'lib/arm64-v8a/libopencv_core.so'
+        exclude 'lib/arm64-v8a/libopencv_imgproc.so'
+        exclude 'lib/armeabi/libcardioDecider.so'
+        exclude 'lib/armeabi-v7a/libcardioDecider.so'
+        exclude 'lib/armeabi-v7a/libcardioRecognizer.so'
+        exclude 'lib/armeabi-v7a/libcardioRecognizer_tegra2.so'
+        exclude 'lib/armeabi-v7a/libopencv_core.so'
+        exclude 'lib/armeabi-v7a/libopencv_imgproc.so'
+        exclude 'lib/mips/libcardioDecider.so'
+        exclude 'lib/x86/libcardioDecider.so'
+        exclude 'lib/x86/libcardioRecognizer.so'
+        exclude 'lib/x86/libcardioRecognizer_tegra2.so'
+        exclude 'lib/x86/libopencv_core.so'
+        exclude 'lib/x86/libopencv_imgproc.so'
+        exclude 'lib/x86_64/libcardioDecider.so'
+        exclude 'lib/x86_64/libcardioRecognizer.so'
+        exclude 'lib/x86_64/libcardioRecognizer_tegra2.so'
+        exclude 'lib/x86_64/libopencv_core.so'
+        exclude 'lib/x86_64/libopencv_imgproc.so'
+    }
+
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+}
+
+dependencies {
+
+    implementation 'androidx.core:core-ktx:1.7.0'
+    implementation 'androidx.appcompat:appcompat:1.5.1'
+    implementation 'com.google.android.material:material:1.9.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.preference:preference-ktx:1.2.1'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    implementation "org.jetbrains.kotlinx:kotlinx-serialization-json:1.4.0"
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.7.10"
+
+    implementation 'com.airbnb.android:lottie:5.2.0'
+    implementation "androidx.core:core-splashscreen:1.0.0"
+
+    implementation project(path: ':data')
+    implementation project(path: ':domain')
+    implementation project(path: ':tv')
+
+    /**
+     * Navigation Fragment
+     * */
+    implementation 'androidx.navigation:navigation-fragment:2.5.3'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.5.3'
+
+    /**
+     * OkHttp
+     * */
+    implementation("com.squareup.okhttp3:okhttp:5.0.0-alpha.3")
+
+
+    /**
+     * CircleImageView
+     */
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+
+    /**
+     * Glide
+     * */
+    implementation 'com.github.bumptech.glide:glide:4.15.1'
+    kapt 'com.github.bumptech.glide:compiler:4.15.1'
+    implementation 'com.github.bumptech.glide:okhttp3-integration:4.15.1'
+    implementation 'jp.wasabeef:glide-transformations:4.3.0'
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+
+    /**
+     * Logging interceptor
+     * */
+    implementation 'com.squareup.okhttp3:logging-interceptor:5.0.0-alpha.3'
+
+    /**
+     * More Library
+     ***/
+    implementation 'io.noties.markwon:core:4.6.2'
+    implementation 'com.flaviofaria:kenburnsview:1.0.7'
+    implementation 'com.davemorrissey.labs:subsampling-scale-image-view-androidx:3.10.0'
+    implementation 'com.alexvasilkov:gesture-views:2.8.3'
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation 'com.github.Blatzar:NiceHttp:0.4.4'
+    implementation 'com.github.SabriGhazali:Shadout-Android:1.0.2'
+    implementation 'androidx.browser:browser:1.5.0'
+    implementation 'com.google.code.gson:gson:2.10.1'
+    /**
+     * DI Dagger Hilt
+     * */
+    implementation "com.google.dagger:hilt-android:2.44"
+    kapt "com.google.dagger:hilt-compiler:2.44"
+
+    implementation "org.jsoup:jsoup:1.15.1"
+    api "com.fasterxml.jackson.module:jackson-module-kotlin:2.13.1"
+
+    //Exoplayer
+    implementation "androidx.media3:media3-exoplayer:1.0.2"
+    implementation "androidx.media3:media3-ui:1.0.2"
+    implementation "androidx.media3:media3-exoplayer-hls:1.0.2"
+    implementation "androidx.media3:media3-exoplayer-dash:1.0.2"
+    implementation "androidx.media3:media3-datasource-okhttp:1.0.2"
+    implementation "androidx.media3:media3-session:1.0.2"
+
+
+    def exo_version = "2.19.1"
+    implementation "com.google.android.exoplayer:exoplayer:$exo_version"
+    implementation "com.google.android.exoplayer:exoplayer-ui:$exo_version"
+    implementation "com.google.android.exoplayer:exoplayer-hls:$exo_version"
+    implementation "com.google.android.exoplayer:extension-mediasession:$exo_version"
+
+
+    // Room components
+    def roomVersion = '2.4.3'
+    implementation "androidx.room:room-ktx:$roomVersion"
+    kapt "androidx.room:room-compiler:$roomVersion"
+    androidTestImplementation "androidx.room:room-testing:$roomVersion"
+    implementation 'com.vmadalin:easypermissions-ktx:1.0.0'
+    // Shimmer Effect
+    implementation 'com.facebook.shimmer:shimmer:0.5.0'
+    implementation 'com.github.javiersantos:AppUpdater:2.7'
+    implementation 'com.github.eltos:simpledialogfragments:v3.7'
+    //Firebase
+    implementation 'com.google.firebase:firebase-firestore-ktx:24.10.3'
+    implementation platform("com.google.firebase:firebase-bom:32.4.1")  // or latest
+
+    // 2️⃣ List your Firebase libraries *without* versions:
+    implementation "com.google.firebase:firebase-database-ktx"
+    implementation "com.google.firebase:firebase-appcheck"         // core App Check
+    implementation "com.google.firebase:firebase-appcheck-interop" // interop provider
+
+}

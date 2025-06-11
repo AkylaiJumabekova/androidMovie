@@ -1,0 +1,101 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">MoviePlayerAkylai</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="get_recommendations">Просматривайте/Читайте аниме или мангу, чтобы получать рекомендации</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Привет, пустой фрагмент</string>
+    <string name="episode_text">%1$s</string>
+    <string name="title_trending">Тренды</string>
+    <string name="title_latest">Последние</string>
+    <string name="no_connection_title">Нет Интернета</string>
+    <string name="no_connection_des">Нет подключения к сети, проверьте настройки сети или попробуйте снова!</string>
+    <string name="try_again">Попробовать снова</string>
+    <string name="requires_android_12">Требуется Android 12+</string>
+    <string name="use_unique_theme_for_each_item">Тема как Аниме/Манга</string>
+    <string name="restart_app">Перезапустить приложение?</string>
+    <string name="do_it">Сделать!</string>
+
+    <string name="title_favorite">Избранное</string>
+    <string name="title_search">Поиск</string>
+    <string-array name="tips">
+        <item>Вы можете долго нажимать на эпизод/главу, чтобы отметить её как прочитанную.</item>
+        <item>Долгое нажатие на шоу откроет редактор списка.</item>
+        <item>В приложении скрыто несколько пасхальных яиц.</item>
+        <item>Задача: Прокрутите до самого низа популярных аниме и манги.</item>
+        <item>Попробуйте долго нажать на название шоу.</item>
+        <item>Чёрт, зачем ты тратишь своё время?</item>
+        <item>Вы можете долго нажать, чтобы скопировать это сообщение.</item>
+        <item>О, Боже, посмотрите! Вы нашли пасхальное яйцо!?</item>
+        <item>Знаешь, кто ещё любит это аниме?</item>
+        <item>Поддержка MAL? Блин.</item>
+        <item>Романы? Больше похоже на НОРоманы.</item>
+        <item>Долго нажмите на логотип, чтобы проверить обновления приложения</item>
+    </string-array>
+    <string name="animations">Анимации</string>
+    <string name="seek_seconds_forward">+%d секунд</string>
+    <string name="seek_seconds_backward">-%d секунд</string>
+    <string name="no_favorites_text">Ваши избранные эпизоды появятся здесь</string>
+    <string name="imageview_in_main">ImageView в главном</string>
+
+    <string name="splash_c2_image">Splash C2 Image</string>
+
+    <string name="image_title">ЗАГОЛОВОК ИЗОБРАЖЕНИЯ</string>
+    <string name="cover_of_anime">обложкаАниме</string>
+    <string name="synopsis_header_title">Синопсис:</string>
+    <string name="not_started_yet">Ещё не начато</string>
+    <string name="select_episode">Выбрать эпизод</string>
+    <string name="episode">Эпизод %1$s</string>
+    <string name="last_watched_format">Последний просмотр: %1$s</string>
+    <string name="loading_episode">Загрузка эпизода</string>
+    <string name="speed">%1$sx</string>
+    <string name="back_to_home">назад на главную</string>
+
+    <!-- Preference Titles -->
+    <string name="settings">Настройки</string>
+    <string name="mx_player_summary">Будет работать только если у вас установлен MX Player</string>
+    <string name="mx_player_title">Использовать MX Player</string>
+    <string name="external_player_off_summary">Используется встроенный плеер</string>
+    <string name="external_player_on_summary">Используется внешний плеер</string>
+    <string name="external_player_title">Использовать внешний видеоплеер</string>
+    <string name="dynamic_colors_disabled_summary">Динамичные цвета отключены</string>
+    <string name="dynamic_colors_enabled_summary">Динамичные цвета включены</string>
+    <string name="dynamic_colors_title">Использовать динамичные цвета</string>
+    <string name="source_cat_title">Источник</string>
+    <string name="source_list_pref_title">Выбрать источник</string>
+    <string name="pip_disabled">Картинка в картинке отключена</string>
+    <string name="pip_enabled">Картинка в картинке включена</string>
+    <string name="pip_title">Включить PiP</string>
+    <string name="theme_cat_title">Тема</string>
+    <string name="player_cat_title">Плеер</string>
+    <string name="version_current">Версия %1$s</string>
+    <string name="donate_goal">(Давайте соберём $200!)</string>
+
+    <string name="player">Плеер</string>
+    <string name="dark_mode_pref_title">Тёмная тема</string>
+    <string name="update_available">Обновление доступно</string>
+    <string name="update_not_available">Обновлений нет</string>
+    <string name="downloading_update">Скачивание обновления</string>
+    <string name="check_update_pref_summary">Пожертвования для разработчиков</string>
+    <string name="check_update_pref">Разработчики</string>
+    <string name="sort">Сортировать</string>
+    <string name="video_cache_perf_title">Включить кэш видео</string>
+    <string name="video_cache_perf_summray_disabled">Кэш видео отключён в плеере</string>
+    <string name="video_cache_perf_summray_enabled">Кэш видео включён в плеере</string>
+    <string name="oled_theme_variant">Вариант темы для OLED</string>
+    <string name="auto_play_summary">Автоматически воспроизводить следующий эпизод, когда текущий завершится</string>
+    <string name="auto_play_title">Автозапуск следующего эпизода</string>
+    <string name="press_back_again_in_player">Нажмите Назад снова, чтобы выйти из плеера</string>
+    <string name="repo">professorDeveloper/MoviePlayerAkylai</string>
+    <string name="telegram">https://t.me/MoviePlayerAkylaiapp</string>
+    <string name="github">https://github.com/professorDeveloper/MoviePlayerAkylai</string>
+    <string name="theme" tools:ignore="ExtraTranslation">Тема</string>
+    <string name="ui_settings" tools:ignore="ExtraTranslation">Настройки интерфейса</string>
+    <string name="watch">Смотреть</string>
+    <string name="use_material_you">Material You</string>
+    <string name="custom_theme">Пользовательская тема:</string>
+    <string name="use_custom_theme">Пользовательская тема</string>
+    <string name="color_picker">Выбор цвета</string>
+    <string name="default_ep_view">Представление элемента по умолчанию</string>
+    <string name="show_yt">Показать ссылку на внешний плеер</string>
+
+</resources>
